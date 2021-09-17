@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace HanaShop.Model.Abstract
 {
-    public abstract class tables : Itable
+    public abstract class auditables : Itable
     {
         public DateTime? CreatedDate { set; get; }
         [MaxLength(256)]
@@ -11,8 +11,9 @@ namespace HanaShop.Model.Abstract
         public DateTime? UpdatedDate { set; get; }
         [MaxLength(256)]
         public string UpdatedBy { set; get; }
-
+        [MaxLength(256)]
         public string MetaKeyword { set; get; }
+        [MaxLength(256)]
         public string MetaDescription { set; get; }
         public bool Status { set; get; }
     }

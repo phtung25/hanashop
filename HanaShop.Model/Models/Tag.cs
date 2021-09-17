@@ -10,7 +10,7 @@ namespace HanaShop.Model.Models
         [Key]
         [MaxLength(50)]
         [Column(TypeName = "varchar")]
-        public int ID { set; get; }
+        public string ID { set; get; }
 
         [MaxLength(50)]
         [Required]

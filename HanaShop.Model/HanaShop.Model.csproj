@@ -54,7 +54,7 @@
     <Compile Include="Abstract\Itable.cs" />
     <Compile Include="Abstract\Itablepost.cs" />
     <Compile Include="Abstract\tablepost.cs" />
-    <Compile Include="Abstract\tables.cs" />
+    <Compile Include="Abstract\auditables.cs" />
     <Compile Include="Models\Footer.cs" />
     <Compile Include="Models\Menu.cs" />
     <Compile Include="Models\MenuGroup.cs" />
@@ -65,7 +65,7 @@
     <Compile Include="Models\PostCategorie.cs" />
     <Compile Include="Models\PostTag.cs" />
     <Compile Include="Models\Product.cs" />
-    <Compile Include="Models\ProductCategories.cs" />
+    <Compile Include="Models\ProductCategory.cs" />
     <Compile Include="Models\ProductTag.cs" />
     <Compile Include="Models\Slide.cs" />
     <Compile Include="Models\SupportOnline.cs" />

@@ -1,16 +1,11 @@
-﻿using HanaShop.Model.Abstract;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HanaShop.Model.Models
 {
     [Table("Posts")]
-   public abstract class Post: tablepost
+    public class Post
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -24,16 +19,39 @@ namespace HanaShop.Model.Models
         [MaxLength(256)]
         [Column(TypeName = "varchar")]
         public string Alias { set; get; }
+
         [Required]
         public int CategoryID { set; get; }
+
         [MaxLength(256)]
         public string Images { set; get; }
+
         [MaxLength(500)]
         public string Description { set; get; }
+
         public string Content { set; get; }
         public bool? HomeFlag { set; get; }
         public bool? HotFlag { set; get; }
         public int? ViewCount { set; get; }
+
+        public DateTime? CreatedDate { set; get; }
+
+        [MaxLength(256)]
+        public string CreatedBy { set; get; }
+
+        public DateTime? UpdatedDate { set; get; }
+
+        [MaxLength(256)]
+        public string UpdatedBy { set; get; }
+
+        [MaxLength(256)]
+        public string MetaKeyword { set; get; }
+
+        [MaxLength(256)]
+        public string MetaDescription { set; get; }
+
+        public bool Status { set; get; }
+
         [ForeignKey("CategoryID")]
         public virtual PostCategorie PostCategorie { set; get; }
     }

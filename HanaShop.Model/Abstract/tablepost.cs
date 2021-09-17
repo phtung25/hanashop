@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HanaShop.Model.Abstract
 {
-    public abstract class tablepost: Itablepost
+    public abstract class tablepost : Itablepost
     {
         public string MetaKeyword { set; get; }
         public string MetaDescription { set; get; }
